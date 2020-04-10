@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Righteous;
+    src: url(fonts/Righteous-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Righteous;
+    background-color: rgb(236, 236, 236);
+}
+
+.nav {
+    width: calc(100vh - 160px);
+    position: fixed;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+}
+
+.nav-left {
+    left: 60px;
+    top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right {
+    left: calc(100vw - 55px);
+    top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-group {
+    display: flex;
+}
+
+.nav-group :not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-link {
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transition: color 0.2s ease-out;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: rgb(100, 100, 100);
+}
+
+

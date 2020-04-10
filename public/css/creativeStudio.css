@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "a b"
+        "a b"
+        "c d"
+        "c d";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 80px 100px;
+}
+
+.grid-container :nth-child(1) {
+    grid-area: a;
+    height: calc(100vh - 100px);
+}
+.grid-container :nth-child(2) {
+    grid-area: b;
+    height: calc(100vh - 100px);
+}
+.grid-container :nth-child(3) {
+    grid-area: c;
+    height: calc(100vh - 100px);
+}
+.grid-container :nth-child(4) {
+    grid-area: d;
+    height: calc(100vh - 100px);
+}
